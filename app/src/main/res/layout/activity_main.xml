@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/mac_address_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mac Address"
+        android:textColor="#000000"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_centerInParent="true"
+        android:textColorHint="#60000000"/>
+
+    <TextView
+        android:id="@+id/textView_FileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Please select file"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+
+    <Button
+        android:id="@+id/button_GetFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getFile"
+        android:text="Get file from device"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/button_SendFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendViaBluetooth"
+        android:text="Send via Bluetooth"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginBottom="50dp"/>
+
+</RelativeLayout>
